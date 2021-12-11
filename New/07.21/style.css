@@ -1,0 +1,153 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 12px;
+    background: lightgray;
+    width: 100%;
+}
+
+.logo
+{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Otomanopee One', sans-serif;
+    margin-bottom: 40px;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo img
+{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 5%;
+}   
+
+
+.lesson
+{
+    min-height: 1000px;
+    text-align: center;
+}
+
+footer
+{
+    clear: both;
+    text-align: center;
+    border: solid darkgray 2px;
+    background: #f7f7f7;
+}
+
+/* Lessons code is beneath this line */
+
+:root
+{
+    --box-color: black;
+}
+
+#box1
+{
+    background-color: var(--box-color, red);
+    width: 50px;
+    height: 50px;
+}
+#box2
+{
+    background-color: var(--box-color, blue);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+#box3
+{
+    background-color: rgba(145, 45, 45, 1);
+    /* use rgba to change opacity of objects*/
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2), -5px -5px 5px 5px rgba(0, 0, 0, 0.4);
+    /*
+    The box-shadow property takes values for
+
+    offset-x (how far to push the shadow horizontally from the element),
+    offset-y (how far to push the shadow vertically from the element),
+    blur-radius,
+    spread-radius and
+    color, in that order.
+    The blur-radius and spread-radius values are optional.*/
+}
+
+#box4
+{
+    width: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    /* it changes the amount of vertical space that each line of text gets*/
+}
+
+#box5
+{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    /*relative, it allows you to specify how CSS should move it relative 
+    to its current position in the normal flow of the page. 
+    It pairs with the CSS offset properties of left or right, 
+    and top or bottom. These say how many pixels, percentages, 
+    or ems to move the item away from where it is normally positioned.*/
+}
+
+#box6
+{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+    /*absolute, which locks the element in place relative to its parent container.
+    this removes the element from the normal flow of the document, so surrounding items ignore it
+    One nuance with absolute positioning is that it will be locked relative to its closest positioned ancestor.
+    If you forget to add a position rule to the parent item, 
+    (this is typically done using position: relative;), 
+    the browser will keep looking up the chain and ultimately default to the body tag.*/
+}
+#box7
+{
+    background-color: hsl(0, 100%, 100%);
+    width: 50px;
+    height: 50px;
+    border-right: black 1px solid;
+    position: fixed;
+    /*One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.s*/
+    display: inline-block;
+}
+
+#box8
+{
+    background: linear-gradient(90deg, blue, red);
+    /*background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);*/
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#box9
+{
+    background: repeating-linear-gradient(
+    90deg, 
+    orange 0px,
+    purple 20px,
+    pink 20px,
+    white 40px);
+    width: 120px;
+    height: 120px;
+}

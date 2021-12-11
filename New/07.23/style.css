@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 12px;
+    background: lightgray;
+    width: 100%;
+}
+
+.logo
+{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Otomanopee One', sans-serif;
+    margin-bottom: 40px;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo img
+{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 5%;
+}   
+
+
+.lesson
+{
+    min-height: 1000px;
+    text-align: center;
+}
+
+footer
+{
+    clear: both;
+    text-align: center;
+    border: solid darkgray 2px;
+    background: #f7f7f7;
+}
+
+/* Lessons code is beneath this line */
+
+@media (min-height: 600px) 
+{
+    body
+    {
+    background: grey;
+    }
+}
+
+#img1 
+{
+    max-width: 20%;
+    height: auto;
+    float: left;
+}
+
+#img2
+{
+    float: left;
+    width: 10vw;
+    height: auto;
+    /*The four different viewport units are:
+
+    vw (viewport width): 10vw would be 10% of the viewport's width.
+    vh (viewport height): 3vh would be 3% of the viewport's height.
+    vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+    vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).*/
+}
+ 
+.box-flex
+{
+
+    height: 45%;
+    background: mediumseagreen;
+    margin: 10px;
+    color: white;
+}
+
+#box-container
+{
+    height: 400px;
+    width: 95px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    /*flex-wrap: wrap;*/
+}
+
+#box2
+{
+    background: navy;
+    flex-basis: 200px;
+    flex-shrink: 2;
+    order: 3;
+    /*flex-grow: 4;*/
+    /*The order property is used to tell CSS the order of how flex items appear in the flex container.*/
+}
+
+#box3
+{
+    background: mediumslateblue;
+    flex-shrink: 4;
+    flex-basis: 200px;
+    /*flex: 1 0 10px; will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.*/
+    align-self: center;
+    /* CSS properties float, clear, and vertical-align do not work on flex items.*/
+}
+
